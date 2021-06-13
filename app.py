@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import speedtest
-import time
 import datetime
 
 st.write("# Internet Connection Speed Test")  
