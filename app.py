@@ -19,5 +19,6 @@ x = datetime.datetime.now()
 st.write(f'Test finished on : {x.strftime("%d")} {x.strftime("%B")} {x.strftime("%Y")} at {x.strftime("%I")}:{x.strftime("%M")}:{x.strftime("%S")} {x.strftime("%p")} \n ### Have a great day!')
 
 st.write(""" * github: https://github.com/ineelhere/webapps/blob/main/app.py 
-* docker: https://hub.docker.com/r/ineelhere/netspeed/ <br>
-Indraneel.""")
+* docker: https://hub.docker.com/r/ineelhere/netspeed/ \
+Indraneel
+""")
