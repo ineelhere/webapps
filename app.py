@@ -4,6 +4,7 @@ import speedtest
 import datetime
 
 st.write("# Internet Connection Speed Test")  
+  
 spd = speedtest.Speedtest()
 down = spd.download()/1000000
 up = spd.upload()/1000000
@@ -18,3 +19,4 @@ st.table(ip)
 x = datetime.datetime.now()
 st.write(f'Test finished on : {x.strftime("%d")} {x.strftime("%B")} {x.strftime("%Y")} at {x.strftime("%I")}:{x.strftime("%M")}:{x.strftime("%S")} {x.strftime("%p")} \n ### Have a great day!')
 
+st.write("github: https://github.com/ineelhere/webapps/blob/main/app.py \n docker: https://hub.docker.com/r/ineelhere/netspeed/ \n - Indraneel.")
