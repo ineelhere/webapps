@@ -3,6 +3,10 @@
   - file name: app.py
   - creted using: streamlit, python
   - deployed using: streamlit share 
+  - Want to run locally? Pull this docker image! (Copy paste these commands on your terminal)
+    - `docker pull ineelhere/netspeed:latest`
+    - `docker run ineelhere/netspeed`
+
 
 
 #### Resources
