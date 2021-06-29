@@ -20,4 +20,4 @@ st.write(f'Test finished on : {x.strftime("%d")} {x.strftime("%B")} {x.strftime(
 
 st.write("""github: https://github.com/ineelhere/webapps/blob/main/app.py 
 docker: https://hub.docker.com/r/ineelhere/netspeed/
-- Indraneel.")
+- Indraneel.""")
