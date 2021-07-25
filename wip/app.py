@@ -7,7 +7,7 @@ st.sidebar.subheader("Upload Zone")
 file_u = st.sidebar.file_uploader(label="Please upload the spreadsheet (.xls or .xlsx)")
 
 def multiple_sheet(df):
-    st.write("We noticed your file has multiple sheets.")
+    st.write("I noticed your file has multiple sheets.")
     sheet = st.selectbox(" Please select the sheet you would like to work on now.", df.sheet_names)
     df = pd.read_excel(file_u, sheet)
     return(df)
