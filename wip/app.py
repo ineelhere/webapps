@@ -33,4 +33,4 @@ footer {visibility: hidden;}
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-st.markdown("`Created by Indraneel Chakraborty`  \n`https://www.linkedin.com/in/indraneelchakraborty/`")
+st.markdown("`Created and maintained by Indraneel Chakraborty`  \n`https://www.linkedin.com/in/indraneelchakraborty/`")
