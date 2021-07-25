@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd 
 import numpy as np
+
 def nowwhat(df):
     tasklist = ["List the column names in this selection (default)",
                 "Basic Description about the data (please verify before using this information)",
@@ -12,6 +13,8 @@ def nowwhat(df):
             st.write(i)
     if command == tasklist[1]:
         st.write(df.describe())
+        st.bar_chart(df.describe())
     if command == tasklist[2]:
         st.write("Count the number of empty data points in each column")
         st.dataframe(df.isnull().sum())
+        st.bar_chart(data=df.isnull().sum())
