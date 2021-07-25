@@ -50,7 +50,4 @@ footer {visibility: hidden;}
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-ineelhere = """
-<footer> Created by Indraneel Chakraborty </footer>
-"""
-st.markdown(ineelhere, unsafe_allow_html=True)
+st.markdown("`Created by Indraneel Chakraborty`  \n`https://www.linkedin.com/in/indraneelchakraborty/`")
