@@ -20,7 +20,7 @@ if file_u:
         st.markdown("**Would you like to trim this data?**")
         response = st.selectbox("Shall we proceed?", ["Click to choose","Yes","Abhi rehne dete hai" ])
         if response == "Yes":
-            st.write("Awesome🔥 ")
+            st.write("Awesome🔥  \nSelect ☑️ the column(s) you would like to keep ")
             trimdf(df)
         if response=="Abhi rehne dete hai":
             st.write("🥺")
