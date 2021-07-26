@@ -3,6 +3,7 @@ import pandas as pd
 from simple_display import *
 from multiple_sheet import *
 from nowwhat import *
+from trimdf import *
 
 st.write("# Spreadsheet Buddy | ineelhere")  
 st.write("Explore your data with the power of python! 😃")
@@ -16,10 +17,24 @@ if file_u:
         df = multiple_sheet(df)
         simple_display(df)
         nowwhat(df)
+        st.markdown("**Would you like to trim this data?**")
+        response = st.selectbox("Shall we proceed?", ["Click to choose","Yes","Abhi rehne dete hai" ])
+        if response == "Yes":
+            st.write("Awesome🔥 ")
+            trimdf(df)
+        if response=="Abhi rehne dete hai":
+            st.write("🥺")
     else:
         df = pd.read_excel(file_u)
         simple_display(df)        
         nowwhat(df)
+        st.markdown("**Would you like to trim this data?**")
+        response = st.selectbox("Shall we proceed?", ["Click to choose","Yes","Abhi rehne dete hai" ])
+        if response == "Yes":
+            st.write("Awesome🔥 ")
+            trimdf(df)
+        if response=="Abhi rehne dete hai":
+            st.write("🥺")
 
 else:
     st.write("Please click on the ▶️ on the top left corner and upload the file.  \n🔴 *Only .xlsx and .xls files are supported currently*")
@@ -33,4 +48,4 @@ footer {visibility: hidden;}
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-st.markdown("`Created and maintained by Indraneel Chakraborty`  \n`https://www.linkedin.com/in/indraneelchakraborty/`")
+st.markdown("`Created by Indraneel Chakraborty `  \n`https://www.linkedin.com/in/indraneelchakraborty/`")
